@@ -4,14 +4,21 @@
   box-sizing: border-box;
 }
 
+.main-wrapper-parent-flex{
+  display: flex;
+  flex-direction: column;
+}
+
 .header{
+  background: #FFF;
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 1rem 2rem ;
+  padding: 1rem 1rem;
+  z-index: 3
 }
 
-.header-content, .header-content2{
+.header-content{
   display: flex;
 }
 
@@ -41,6 +48,7 @@
   }
 } */
 
+/*********** nav bar *************/
 .nav {
    transition: .5s all ease;
    position: fixed;
@@ -52,7 +60,7 @@
    background: #FFF;
    z-index: 3
 }
-/* js class to open */
+/* js class to open nav bar */
 .open {
   left: 0px;
 }
@@ -67,11 +75,11 @@
   z-index: 2;
   display: none
 }
-/*turn on with js*/
+/* turn on with js */
 .navOverlayActive{
   display: block
 }
-
+/* nav basic styles */
 li, .header-content2{
   padding: 1rem 2rem;
   list-style-type: none;
@@ -88,7 +96,7 @@ a:hover {
   color: #f92c8c;
 }
 
-/***** pure css hammie icon transition ****/
+/*********** pure css hammie icon transition ****/
 .bar {
    display: block;
    height: 3px;
@@ -138,42 +146,78 @@ a:hover {
    width: 0;
  }
 
- .section{
-   padding: 2rem;
-   position: relative;
-   top: 2.5rem;
-   z-index: 1
- }
+/******   main page content sections   *****/
+.main{
+padding: 4rem;
+position: relative;
+}
+
+.section, .img-section{
+  width: 100%;
+  padding: 1rem;
+  position: relative;
+  top: 4rem;
+  z-index: 1 /*places section behind the overlay tint*/
+}
 
 h1:hover, h2:hover, p:hover   {
-   color: #f92c8c;
-   transition: all .5s ease;
- }
+  color: #f92c8c;
+  transition: all .5s ease;
+}
+.img-section{
 
- /******* media queries *******/
- @media(min-width:767px){
- html{
-   font-size: 20px
- }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
- .main-wrapper{
-   display: flex;
- }
+img{
+  padding-bottom: 2rem;
+}
 
- .nav{
- position: relative;
- height: 100vh;
- min-width: 250px;
- top: 0px;
- left: 0px;
- padding-top: 4rem
- }
+/**** 3js ****/
+.threeJS{
+  position: absolute;
+  width:100%;
+  height: 100%
+}
+
+
+
+/******* MQ for larger screens min-width = starting at... *******/
+@media(min-width:767px){
+html{
+  font-size: 20px
+}
+/*** nav mq **/
+.main-wrapper-parent-flex{
+  flex-direction: row
+}
+
+.nav{
+position: relative;
+height: 100vh;
+min-width: 250px;
+top: 0px;
+left: 0px;
+padding-top: 4rem
+}
 
 .hammie, .logo1{
-  display: none;
+ display: none;
 }
 
 .logo{
-  padding-bottom: 2rem
+ padding-bottom: 2rem
+}
+
+/*** mq main content ***/
+img{
+ width:47%; /* flex width with gap*/
+}
+
+.main{
+  max-width: 900px;
+  margin: 0 auto
 }
 }
