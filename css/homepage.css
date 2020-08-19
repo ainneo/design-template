@@ -161,7 +161,7 @@ h1:hover, h2:hover, p:hover   {
 img{
   object-fit: contain;/*helps with image aspect ratio*/
   width: 100%;
-  /* min-height: 300px; */
+  min-height: 300px;
   padding: 1rem 0 1rem 0
 }
 
