@@ -152,11 +152,11 @@ h1:hover, h2:hover, p:hover   {
   color: #f92c8c;
   transition: all .5s ease;
 }
-.img-section{
+/* .img-section{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
+} */
 
 img{
   object-fit: contain;/*helps with image aspect ratio*/
