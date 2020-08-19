@@ -99,11 +99,11 @@ a:hover {
  }
 /* bar container */
  .con {
-   /* width: auto;
+   width: auto;
    -webkit-transition: all .5s ease;
    -moz-transition: all .5s ease;
    -ms-transition: all .5s ease;
-   -o-transition: all .5s ease; */
+   -o-transition: all .5s ease;
    transition: all .5s ease;
  }
 
@@ -112,26 +112,26 @@ a:hover {
 }
 
 .bar {
-   /* -webkit-transition: all .5s ease;
+   -webkit-transition: all .5s ease;
    -moz-transition: all .5s ease;
    -ms-transition: all .5s ease;
-   -o-transition: all .5s ease; */
+   -o-transition: all .5s ease;
    transition: all .5s ease;
  }
 
  .changeX.top {
-   /* -webkit-transform: translateY(15px) rotateZ(45deg);
+   -webkit-transform: translateY(15px) rotateZ(45deg);
    -moz-transform: translateY(15px) rotateZ(45deg);
    -ms-transform: translateY(15px) rotateZ(45deg);
-   -o-transform: translateY(15px) rotateZ(45deg); */
+   -o-transform: translateY(15px) rotateZ(45deg);
    transform: translateY(11px) rotateZ(42deg);
  }
 
  .changeX.bottom {
-   /* -webkit-transform: translateY(-15px) rotateZ(-45deg);
+   -webkit-transform: translateY(-15px) rotateZ(-45deg);
    -moz-transform: translateY(-15px) rotateZ(-45deg);
    -ms-transform: translateY(-15px) rotateZ(-45deg);
-   -o-transform: translateY(-15px) rotateZ(-45deg); */
+   -o-transform: translateY(-15px) rotateZ(-45deg);
    transform: translateY(-11px) rotateZ(-42deg);
  }
 
