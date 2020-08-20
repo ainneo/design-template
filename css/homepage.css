@@ -144,7 +144,7 @@ a:hover {
   position: relative;
   top: 4rem;
   width: 100%;
-  padding: 0 1.5rem 0 1.5rem;
+  padding: 1rem 1.5rem 1rem 1.5rem;
   z-index: 1 /*places section behind the overlay tint*/
 }
 
@@ -152,11 +152,6 @@ h1:hover, h2:hover, p:hover   {
   color: #f92c8c;
   transition: all .5s ease;
 }
-/* .img-section{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-} */
 
 img{
   object-fit: contain;/*helps with image aspect ratio*/
@@ -167,7 +162,7 @@ img{
 
 /**** 3js ****/
 .threeJS{
-  position: absolute;
+  position: fixed;
 }
 
 
@@ -182,7 +177,7 @@ html{
 }
 
 .nav{
-position: relative;
+position: fixed; /*relative*
 height: 100vh;
 min-width: 250px;
 top: 0px;
