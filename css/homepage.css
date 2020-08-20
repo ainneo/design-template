@@ -144,9 +144,10 @@ a:hover {
   position: relative;
   top: 4rem;
   width: 100%;
-  padding: 1rem 1.5rem 1rem 1.5rem;
+  padding: 1.5rem 2rem;
   z-index: 1 /*places section behind the overlay tint*/
 }
+
 
 h1:hover, h2:hover, p:hover   {
   color: #f92c8c;
@@ -177,7 +178,7 @@ html{
 }
 
 .nav{
-position: fixed; /*relative*
+position: sticky; /*relative*/
 height: 100vh;
 min-width: 250px;
 top: 0px;
