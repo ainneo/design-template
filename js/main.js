@@ -5,7 +5,9 @@ const logo = document.getElementById("logoID")
 const nav = document.getElementById("active");
 const toggleSpan = document.getElementsByTagName("span");
 const navOverlay = document.querySelector(".navOverlay")
+const navLink = document.querySelectorAll(".navLink")
 
+function mainNavLogic(){
 // add event to hamburger to toggle open/close nav and animate hamburger
 hammie1.addEventListener("click", function(){
   nav.classList.toggle("open");
@@ -36,3 +38,16 @@ function animateToggle() {
     toggleSpan[item].classList.toggle("changeX");
   }
 }
+}
+mainNavLogic();
+
+/*close navagation after clicking on each link*/
+function close(){
+navLink.forEach(function(lemons){
+  lemons.addEventListener("click", function(){
+    nav.classList.remove("open");
+    navOverlay.classList.remove("navOverlayActive")
+  })
+})
+}
+close()
