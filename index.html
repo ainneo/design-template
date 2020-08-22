@@ -20,6 +20,7 @@
 </head>
 
 <body>
+<!-- hammie-->
 <div class="main-wrapper-parent-flex">
     <div class="header-content">
       <div class="hammie" id="toggle-nav1">
@@ -31,7 +32,9 @@
       </div>
       <div class="logo1" id="logoID">company name</div>
     </div>
+  <!-- Overlay effect when opening sidebar on small screens -->
   <div class="navOverlay"></div>
+  <!-- Sidebar/menu nav-->
   <nav class="nav" id="active">
     <ul>
       <div class="header-content2">
@@ -64,7 +67,7 @@
       <img src="https://images.pexels.com/photos/6224/hands-people-woman-working.jpg?auto=compress&cs=tinysrgb&h=650&w=940">
       <img src="https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="">
     </section>
-
+    <!-- services section -->
     <section class="section" id="services">
       <h1>Services</h1>
       <h2>We focus on what is best for you</h2>
@@ -79,7 +82,7 @@
         aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
         nisi ut aliquip ex ea commodo consequat.</p>
     </section>
-
+    <!-- designers section -->
     <section class="section" id="designers">
       <h1>Designers</h1>
       <h2>The best team in the world</h2>
@@ -111,17 +114,31 @@
        </div>
 
     </section>
-
+    <!-- contact section -->
     <section class="section" id="contact">
       <h1>Contact</h1>
       <h2>The best team in the world</h2>
       <p>Fill out the form and fill me in with the details :) We love meeting new people!</p>
-    </section>
+      <div class="container">
+  <form action="" method:"">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.." required="required">
 
-  </main>
+    <label for="lname">Email</label>
+    <input type="email" id="lname" name="email" placeholder="Your email.." required="required">
+
+    <label for="message">Message</label>
+    <textarea id="message" name="Message" placeholder="Write something.." style="height:200px" required="required" ></textarea>
+
+    <input type="submit" value="submit" onclick="alert('Thank You! We will get back soon!')">
+
+  </form>
+     </div>
+     </section>
+     </main>
 
 
-
+  <!-- js3 background section -->
   <section class="threeJS">
       <div id="container"></div>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/89/three.min.js"></script>
@@ -189,7 +206,6 @@
     }
       </script>
   </section>
-
   </div>
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>

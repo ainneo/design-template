@@ -152,18 +152,20 @@ a:hover{
   z-index: 1 /*places section behind the overlay tint*/
 }
 
-
-
 /* selects all of main's sections after the 3rd*/
 .main section:nth-child(n+2){
   padding-top: 4rem
 }
 
+.main section:nth-child(5){
+  padding-bottom: 4rem
+}
 
 h1:hover, h2:hover, p:hover   {
   color: #f92c8c;
   transition: all .5s ease;
 }
+
 
 img{
   object-fit: contain;/*helps with image aspect ratio*/
@@ -179,6 +181,46 @@ img{
 }
 
 .designers-child{
+  padding-top: 2rem
+}
+
+
+input[type=text],  textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=email],  textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #f92c8c;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #f11c9a;
+}
+
+.container {
   padding-top: 2rem
 }
 
